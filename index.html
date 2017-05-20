@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Simon Game</h1>
+
+<div class="container">
+	<div class="sector green"></div>
+	<div class="sector red"></div>
+	<div class="sector yellow"></div>
+	<div class="sector blue"></div>
+	<div class="circle">
+		<img src="smiling.png">
+		<br>
+		normal 
+		<input type="range" min="0" max="1" step="1" value="0" id="mode"> 
+		strict
+		<br>
+		start &nbsp;&nbsp;&nbsp;&nbsp; count
+		<br>
+		<button id="start"></button>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" disabled id="count" value="0">
+	</div>
+</div>
+
+<audio src="click.wav"></audio>
+
+<div class="alert">
+	<span></span><br><br>
+	<button>close</button>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

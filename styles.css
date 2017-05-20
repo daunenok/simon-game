@@ -1,0 +1,135 @@
+body {
+	font: 24px 'Chewy', cursive;
+	background-image: url("back.jpg");
+}
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: orangered;
+	text-shadow: 0 0 2px #000;
+}
+.container {
+	width: 440px;
+	height: 440px;
+	background-color: #222;
+	border-radius: 100%;
+	border: 30px solid #222;
+	box-shadow: 0 0 10px #222;
+	margin: 0 auto;
+	position: relative;
+}
+.sector {
+	box-sizing: border-box;
+	width: 220px;
+	height: 220px;
+	float: left;
+	cursor: pointer;
+}
+.green {
+	background-color: lime;
+	border-radius: 100% 0 0 0;
+	border-bottom: 15px solid #222;
+	border-right: 15px solid #222;
+}
+.green.active {
+	background-color: green;
+}
+.red {
+	background-color: orangered;
+	border-radius: 0 100% 0 0;
+	border-bottom: 15px solid #222;
+	border-left: 15px solid #222;
+}
+.red.active {
+	background-color: darkred;
+}
+.yellow {
+	background-color: yellow;
+	border-radius: 0 0 0 100%;
+	border-top: 15px solid #222;
+	border-right: 15px solid #222;
+}
+.yellow.active {
+	background-color: darkgoldenrod;
+}
+.blue {
+	background-color: royalblue;
+	border-radius: 0 0 100% 0;
+	border-top: 15px solid #222;
+	border-left: 15px solid #222;
+}
+.blue.active {
+	background-color: darkblue;
+}
+.circle {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 105px;
+	left: 105px;
+	background-color: #fff;
+	border-radius: 100%;
+	border: 15px solid #222;
+	text-align: center;
+}
+input[type="range"] {
+	width: 30px;
+}
+#start {
+	width: 30px;
+	height: 30px;
+	background-color: orangered;
+	border: 0;
+	border-radius: 100%;
+	box-shadow: 0 0 10px orangered;
+	cursor: pointer;
+	vertical-align: middle;
+	outline: 0;
+}
+#start:hover {
+	background-color: #e60000;
+	box-shadow: 0 0 10px #e60000;
+}
+#count {
+	width: 40px;
+	vertical-align: middle;
+	font-family: 'Chewy', cursive;
+	font-size: 24px;
+	text-align: center;
+}
+.alert {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 200px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+}
+.alert button {
+	font: 22px 'Chewy', cursive;
+	cursor: pointer;
+}
+.circle img {
+	margin-top: 20px;
+}
+.blinking {   
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
